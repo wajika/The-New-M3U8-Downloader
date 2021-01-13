@@ -16,6 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: add path
+      run: echo "::add-path::C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
+    
     - name: Setup MSBuild path
       uses: microsoft/setup-msbuild@v1.0.1
       with:
